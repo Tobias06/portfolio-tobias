@@ -1,0 +1,176 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo y fuente global */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 0px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Para un desplazamiento suave */
+}
+
+/* Contenedor principal centrado */
+.container {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Estilo del header */
+header {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Perfil */
+.profile {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.location i {
+    margin: 5px 0;
+    color: #e74c3c;
+}
+
+.location, .description {
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: gray;
+}
+
+/* Botones de enlaces */
+.div {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    padding: 0; /* Quita el padding por defecto si lo hay */
+}
+
+.div-button {
+    
+    display: flex;
+    background-color: rgb(58, 61, 66);
+    margin: 10px auto;
+    width: 100%;
+    max-width: 500px;
+    text-decoration: none; 
+    align-items: center; /* Alinea verticalmente el ícono y el texto */
+    justify-content: center; /* Alinea el contenido en el centro del botón */
+    padding: 10px 20px;
+    font-size: 18px;
+    /* border: none; */
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+}
+
+.div .icono {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    display: flex;
+    align-items: center; /* Centra verticalmente el ícono */
+    font-size: 30px; /* Ajusta el tamaño del ícono */
+    color: rgb(5, 3, 3);
+}
+.div .texto {
+    flex-grow: 1; /* Permite que el texto se expanda para estar centrado */
+    text-align: center;
+    color: white;
+}
+
+.div .texto:hover {
+    color: rgb(5, 3, 3);
+}
+
+/* Video */
+.latest-video {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.latest-video iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+/* Formulario de newsletter */
+.newsletter {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #e74c3c;
+    color: #ffffff;
+    cursor: pointer;
+}

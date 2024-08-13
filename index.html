@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobias Quina</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="profile">
+                <img src="images/nft.jpeg" alt="Tobias" class="profile-pic">
+                <h1>Tobias</h1>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Colombia</p>
+
+                <p class="description">Cloud Engineer, DevOps</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </section>
+
+            <section>
+                <div class="div">
+                    <button class="div-button" onclick="window.open('https://github.com', '_blank')">
+                        <i class="fab fa-github icono"></i>
+                        <span class="texto">Ver en GitHub</span>
+                    </button>
+                </div>
+                <div class="div">
+                    <button class="div-button" onclick="window.open('https://www.youtube.com/', '_blank')">
+                        <i class="fab fa-youtube icono"></i>
+                        <span class="texto">Ir en Youtube</span>
+                    </button>
+                </div>
+                <div class="div">
+                    <button class="div-button" onclick="window.open('https://slack.com/', '_blank')">
+                        <i class="fa-brands fa-slack icono"></i>
+                        <span class="texto">Ir en Slack</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="latest-video">
+                <h2>Mi video más reciente</h2>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </section>
+
+            <section class="newsletter">
+                <h2>Ingresa tu correo</h2>
+                <p>Suscríbete para recibir mi newsletter semanal, gratis!</p>
+                <form action="#">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script>
+        window.onload = function() {
+            document.getElementById('header').scrollIntoView();
+        };
+    </script>
+</body>
+
+</html>
